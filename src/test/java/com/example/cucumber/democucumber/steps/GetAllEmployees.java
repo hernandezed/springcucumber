@@ -30,7 +30,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = DemoCucumberApplication.class, loader = SpringBootContextLoader.class)
-@Ignore
+@Ignore //necessary because this class doesn't have a junit test :/
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class GetAllEmployees {
 
